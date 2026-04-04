@@ -1,0 +1,15 @@
+(test
+ (name test_ch5)
+ (libraries ounit2 ch5))
+
+(test
+  (name test_exceptions)
+  (libraries ounit2))
+
+(test
+  (name test_trees)
+  (libraries ounit2 ch5))
+
+(test
+  (name test_trees_rec)
+  (libraries ounit2 ch5))

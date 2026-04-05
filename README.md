@@ -1,1 +1,1 @@
-Leanring Ocaml from the [CS3110 course](https://cs3110.github.io/textbook/cover.html).
+Learning Ocaml from the [CS3110 course](https://cs3110.github.io/textbook/cover.html).

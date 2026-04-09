@@ -1,0 +1,7 @@
+(test
+  (name test_myqueue)
+  (libraries ounit2 myqueue))
+
+(test
+  (name test_batched_queue)
+  (libraries ounit2 myqueue))

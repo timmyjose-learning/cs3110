@@ -1,0 +1,23 @@
+(executable
+  (name aliasing)
+  (public_name aliasing))
+
+(executable
+  (name counter)
+  (public_name counter))
+
+(executable
+  (name better_counter)
+  (public_name better_counter))
+
+(executable 
+  (name pointers)
+  (public_name pointers))
+
+(executable 
+  (name rec)
+  (public_name rec))
+
+(executable 
+  (name fib)
+  (public_name fib))

@@ -1,0 +1,3 @@
+(executable
+  (name fib_par2)
+  (libraries domainslib))

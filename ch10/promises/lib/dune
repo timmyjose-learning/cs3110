@@ -1,2 +1,3 @@
 (library 
-  (name promises))
+  (name promises)
+  (libraries domainslib))

@@ -1,0 +1,12 @@
+(executable 
+  (name fib1))
+
+(executable
+  (name fib2))
+
+(executable
+  (name fib3))
+
+(executable
+  (name fib4)
+  (libraries domainslib))

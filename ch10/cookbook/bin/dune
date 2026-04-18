@@ -8,3 +8,6 @@
 
 (executable
   (name sorting_demo))
+
+(executable
+  (name env_demo))

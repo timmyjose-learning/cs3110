@@ -5,3 +5,6 @@
 
 (executable
   (name hashtable_demo))
+
+(executable
+  (name sorting_demo))

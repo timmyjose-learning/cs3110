@@ -1,0 +1,7 @@
+(executable
+ (public_name cookbook)
+ (name main)
+ (libraries cookbook))
+
+(executable
+  (name hashtable_demo))

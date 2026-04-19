@@ -11,3 +11,6 @@
 
 (executable
   (name env_demo))
+
+(executable
+  (name fileio_demo))

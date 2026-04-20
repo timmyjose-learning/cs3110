@@ -3,9 +3,9 @@ module type Lwt = sig
   type 'a t
   type 'a u
 
+  val wait : unit -> 'a t * 'a u
   val state : 'a t -> 'a state
+  val return : 'a -> 'a t
   val wakeup_later : 'a u -> 'a -> unit
   val wakeup_later_exn : 'a u -> exn -> unit
-  val wait : unit -> 'a t * 'a u
-  val return : 'a -> 'a t
 end

@@ -1,0 +1,21 @@
+(executable
+  (name main)
+  (libraries lwt.unix))
+
+(executable
+  (name seq)
+  (libraries lwt.unix))
+
+(executable
+  (name bindseq)
+  (libraries lwt.unix))
+
+(executable
+  (name bindadd)
+  (libraries lwt.unix))
+
+(executable
+  (name bindcalc)
+  (libraries lwt.unix))
+
+

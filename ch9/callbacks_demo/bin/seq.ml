@@ -1,0 +1,7 @@
+open Lwt_io
+
+let p =
+  Lwt.bind (read_line stdin) (fun s1 ->
+      Lwt.bind (read_line stdin) (fun s2 -> printf "%s\n" (s1 ^ ", " ^ s2)))
+
+let _ = Lwt_main.run p

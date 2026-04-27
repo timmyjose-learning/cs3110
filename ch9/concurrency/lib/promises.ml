@@ -4,10 +4,10 @@ module type PROMISE = sig
   type 'a resolver
 
   val make : unit -> 'a promise * 'a resolver
-  val return : 'a -> 'a promise
-  val state : 'a promise -> 'a state
   val fulfill : 'a resolver -> 'a -> unit
   val reject : 'a resolver -> exn -> unit
+  val state : 'a promise -> 'a state
+  val return : 'a -> 'a promise
 end
 
 module Promise : PROMISE = struct
@@ -15,15 +15,15 @@ module Promise : PROMISE = struct
   type 'a promise = 'a state ref
   type 'a resolver = 'a promise
 
-  let write_once p s =
-    if !p = Pending then p := s else invalid_arg "cannot write twice"
+  let write_once r x =
+    if !r = Pending then r := x else invalid_arg "cannot write twice"
 
   let make () =
     let p = ref Pending in
     (p, p)
 
-  let return x = ref (Fulfilled x)
-  let state p = !p
   let fulfill r x = write_once r (Fulfilled x)
   let reject r e = write_once r (Rejected e)
+  let state p = !p
+  let return x = ref (Fulfilled x)
 end
